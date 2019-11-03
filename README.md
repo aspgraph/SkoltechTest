@@ -8,7 +8,6 @@
 
 Например, следующий скрипт генерирует случайный набор таких инцидентов при N=10, M=2, и выписывает в csv-файл:
 ```python
-
 # ====
 
 import numpy as np
@@ -28,13 +27,13 @@ df = pd.DataFrame({'feature1':np.random.randint(M, size=(N,)),
                  })
 
 df.to_csv('incidents.csv', index_label='id')
+
 # =====
 ```
 
 Пример сгенерированного файла:
 
 ```csv
-
 id,feature1,feature2,time
 
 0,1,0,0.206520219143
@@ -70,7 +69,6 @@ id,feature1,feature2,time
 Например, в случае dT=0.3 для приведенного выше примера ответ должен выглядеть так:
 
 ```csv
-
 id,count
 
 0,0
