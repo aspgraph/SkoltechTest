@@ -95,3 +95,8 @@ id,count
 Функция должна считывать csv-файл с инцидентами, вычислять результаты для всех инцидентов и выписывать их в csv-файл указанного вида.
 
 Основной нюанс: функция должна работать достаточно быстро, а именно не дольше минуты при M=100, N=1000000, dT=0.3.
+
+# Запуск функции из командной строки
+
+$ python -c 'import processor; processor.process_incidents(input_filename="~path/csv/incidents.csv", output_filename="~path/csv/incidents_count.csv", dT=0.3)'
+
